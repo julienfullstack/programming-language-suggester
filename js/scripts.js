@@ -17,13 +17,13 @@ window.addEventListener("load", function() {
 
     let ans = expVal + interestsVal + toolsVal + platformVal + learnerVal;
 
-    if (ans >= 4 && ans <= 7) {
+    if (ans >= 3 && ans <= 4) {
       document.getElementById("js").classList.remove("hidden");
-    } else if (ans >= 8 && ans <= 10) {
+    } else if (ans >= 5 && ans <= 6) {
       document.getElementById("python").classList.remove("hidden");
-    } else if (ans >= 11 && ans <= 13) {
+    } else if (ans >= 7 && ans <= 8) {
       document.getElementById("csharp").classList.remove("hidden");
-    } else if (ans >= 14 && ans <= 16) {
+    } else if (ans >= 9) {
   });
 
   resetBtn.addEventListener("click", function() {
