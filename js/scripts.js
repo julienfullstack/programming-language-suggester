@@ -7,26 +7,23 @@ window.addEventListener("load", function() {
     event.preventDefault();
     hideResultsAndError();
 
-    let colorVal = parseInt(document.getElementById("color").value);
-    let beverageVal = parseInt(document.getElementById("beverage").value);
-    let locationVal = parseInt(document.getElementById("location").value);
-    let hobbyVal = parseInt(document.getElementById("hobby").value);
+    let expVal = parseInt(document.getElementById("experience").value);
+    let interestsVal = parseInt(document.getElementById("interests").value);
+    let toolsVal = parseInt(document.getElementById("tools").value);
+    let platformVal = parseInt(document.getElementById("platform").value);
+    let learnerVal = parseInt(document.getElementById("learner").value);
 
     document.getElementById("reset").removeAttribute("class");
 
-    let ans = colorVal + beverageVal + locationVal + hobbyVal;
+    let ans = expVal + interestsVal + toolsVal + platformVal + learnerVal;
 
     if (ans >= 4 && ans <= 7) {
-      document.getElementById("cat").classList.remove("hidden");
+      document.getElementById("js").classList.remove("hidden");
     } else if (ans >= 8 && ans <= 10) {
-      document.getElementById("elephant").classList.remove("hidden");
+      document.getElementById("python").classList.remove("hidden");
     } else if (ans >= 11 && ans <= 13) {
-      document.getElementById("monkey").classList.remove("hidden");
+      document.getElementById("csharp").classList.remove("hidden");
     } else if (ans >= 14 && ans <= 16) {
-      document.getElementById("dog").classList.remove("hidden");
-    } else if (ans >= 17 && ans <= 20) {
-      document.getElementById("owl").classList.remove("hidden");
-    }
   });
 
   resetBtn.addEventListener("click", function() {
