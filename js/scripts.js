@@ -17,27 +17,26 @@ window.addEventListener("load", function() {
 
     let ans = expVal + interestsVal + toolsVal + platformVal + learnerVal;
 
-    if (ans >= 3 && ans <= 4) {
+    if (ans >= 5 && ans <= 8) {
       document.getElementById("js").classList.remove("hidden");
-    } else if (ans >= 5 && ans <= 6) {
+    } else if (ans >= 9 && ans <= 10) {
       document.getElementById("python").classList.remove("hidden");
-    } else if (ans >= 7 && ans <= 8) {
+    } else if (ans >= 11 && ans <= 15) {
       document.getElementById("csharp").classList.remove("hidden");
-    } else if (ans >= 9) {
+    }
   });
 
   resetBtn.addEventListener("click", function() {
-    document.getElementById("color").value = "";
-    document.getElementById("beverage").value = "";
-    document.getElementById("location").value = "";
-    document.getElementById("hobby").value = "";
+    document.getElementById("experience").value = "";
+    document.getElementById("interests").value = "";
+    document.getElementById("tools").value = "";
+    document.getElementById("platform").value = "";
+    document.getElementById("learner").value = "";
   });
 
   function hideResultsAndError() {
-    document.getElementById("cat").classList.add("hidden");
-    document.getElementById("elephant").classList.add("hidden");
-    document.getElementById("monkey").classList.add("hidden");
-    document.getElementById("owl").classList.add("hidden");
-    document.getElementById("dog").classList.add("hidden");
+    document.getElementById("js").classList.add("hidden");
+    document.getElementById("csharp").classList.add("hidden");
+    document.getElementById("python").classList.add("hidden");
   }
 });
