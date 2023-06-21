@@ -1,7 +1,7 @@
 _Programming Language Suggester_
 #### By _Julien Lenaz_
 #### _Website which displays a personality test to pair users with a suggested programming language_
-[GitHub Repo] (https://github.com/julienlen/programming-language-suggester)
+[GitHub Repo](https://github.com/julienlen/programming-language-suggester)
 ## Technologies used:
 *_HTML_
 *_CSS_
